@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	MIDI
 %define	pnam	Perl
-Summary:	MIDI-Perl perl module
-Summary(pl):	Modu³ perla MIDI-Perl
+Summary:	MIDI::Perl perl module
+Summary(pl):	Modu³ perla MIDI::Perl
 Name:		perl-MIDI-Perl
 Version:	0.79
 Release:	6
@@ -15,11 +15,11 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-MIDI-Perl is a suite of Perl modules that allows you to read, compose,
+MIDI::Perl is a suite of Perl modules that allows you to read, compose,
 modify, and write MIDI files.
 
 %description -l pl
-MIDI-Perl jest zestawem modu³ów umo¿liwiaj±cych czytanie, tworzenie,
+MIDI::Perl jest zestawem modu³ów umo¿liwiaj±cych czytanie, tworzenie,
 modyfikowanie i zapis plików MIDI.
 
 %prep
