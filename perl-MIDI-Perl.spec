@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	MIDI
 %define	pnam	Perl
-%include	/usr/lib/rpm/macros.perl
 Summary:	MIDI-Perl perl module
 Summary(pl):	Modu³ perla MIDI-Perl
 Name:		perl-MIDI-Perl
 Version:	0.79
-Release:	5
-
+Release:	6
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -24,7 +23,7 @@ MIDI-Perl jest zestawem modu³ów umo¿liwiaj±cych czytanie, tworzenie,
 modyfikowanie i zapis plików MIDI.
 
 %prep
-%setup -q -n MIDI-Perl-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL
