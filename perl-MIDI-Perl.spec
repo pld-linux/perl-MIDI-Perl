@@ -2,7 +2,7 @@
 Summary:	MIDI-Perl perl module
 Summary(pl):	Modu³ perla MIDI-Perl
 Name:		perl-MIDI-Perl
-Version:	0.74
+Version:	0.75
 Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
