@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	MIDI
-%define	pnam	Perl
+%define		pdir	MIDI
+%define		pnam	Perl
 Summary:	MIDI::Perl perl module
 Summary(pl):	Modu³ perla MIDI::Perl
 Name:		perl-MIDI-Perl
