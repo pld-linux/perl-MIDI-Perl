@@ -1,3 +1,7 @@
+#
+# Conditional build:
+%bcond_without	tests	# do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	MIDI
 %define	pnam	Perl
@@ -6,7 +10,8 @@ Summary(pl):	Modu³ perla MIDI::Perl
 Name:		perl-MIDI-Perl
 Version:	0.8
 Release:	2
-License:	GPL
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	5d2c37e1263e4b8dd9b468e094c1afcb
@@ -30,6 +35,8 @@ modyfikowanie i zapis plików MIDI.
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 %{__make}
+
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
