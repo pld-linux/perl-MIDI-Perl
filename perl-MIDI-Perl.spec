@@ -5,11 +5,11 @@ Summary:	MIDI::Perl perl module
 Summary(pl):	Modu³ perla MIDI::Perl
 Name:		perl-MIDI-Perl
 Version:	0.8
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl >= 5.6
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -26,7 +26,8 @@ modyfikowanie i zapis plików MIDI.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 
 %install
@@ -40,6 +41,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc ChangeLog README
-%{perl_sitelib}/MIDI.pm
-%{perl_sitelib}/MIDI
+%{perl_vendorlib}/MIDI.pm
+%{perl_vendorlib}/MIDI
 %{_mandir}/man3/*
