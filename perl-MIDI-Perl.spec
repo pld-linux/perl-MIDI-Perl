@@ -9,7 +9,7 @@ Summary:	MIDI::Perl perl module
 Summary(pl):	Modu³ perla MIDI::Perl
 Name:		perl-MIDI-Perl
 Version:	0.8
-Release:	2
+Release:	3
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -43,6 +43,9 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
+
+# get rid of pod documentation
+rm -f $RPM_BUILD_ROOT%{perl_vendorlib}/MIDI/*.pod
 
 %clean
 rm -rf $RPM_BUILD_ROOT
