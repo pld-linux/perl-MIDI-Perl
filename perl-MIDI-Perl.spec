@@ -6,7 +6,7 @@
 %define		pdir	MIDI
 %define		pnam	Perl
 Summary:	MIDI::Perl perl module
-Summary(pl):	Modu≥ perla MIDI::Perl
+Summary(pl.UTF-8):   Modu≈Ç perla MIDI::Perl
 Name:		perl-MIDI-Perl
 Version:	0.8
 Release:	3
@@ -24,9 +24,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 MIDI::Perl is a suite of Perl modules that allows you to read, compose,
 modify, and write MIDI files.
 
-%description -l pl
-MIDI::Perl jest zestawem modu≥Ûw umoøliwiaj±cych czytanie, tworzenie,
-modyfikowanie i zapis plikÛw MIDI.
+%description -l pl.UTF-8
+MIDI::Perl jest zestawem modu≈Ç√≥w umo≈ºliwiajƒÖcych czytanie, tworzenie,
+modyfikowanie i zapis plik√≥w MIDI.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
