@@ -6,7 +6,7 @@
 %define		pdir	MIDI
 %define		pnam	Perl
 Summary:	MIDI::Perl perl module
-Summary(pl.UTF-8):   Moduł perla MIDI::Perl
+Summary(pl.UTF-8):	Moduł perla MIDI::Perl
 Name:		perl-MIDI-Perl
 Version:	0.8
 Release:	3
