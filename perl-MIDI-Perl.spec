@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	MIDI
 %define		pnam	Perl
+%include	/usr/lib/rpm/macros.perl
 Summary:	MIDI::Perl perl module
 Summary(pl.UTF-8):	Moduł perla MIDI::Perl
 Name:		perl-MIDI-Perl
@@ -15,14 +15,15 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	a4f1c45483b460b4059664cde8636de1
-BuildRequires:	rpm-perlprov >= 4.1-13
+URL:		http://search.cpan.org/dist/MIDI-Perl/
 BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-MIDI::Perl is a suite of Perl modules that allows you to read, compose,
-modify, and write MIDI files.
+MIDI::Perl is a suite of Perl modules that allows you to read,
+compose, modify, and write MIDI files.
 
 %description -l pl.UTF-8
 MIDI::Perl jest zestawem modułów umożliwiających czytanie, tworzenie,
