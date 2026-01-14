@@ -8,7 +8,7 @@ Summary:	MIDI::Perl perl module
 Summary(pl.UTF-8):	Moduł perla MIDI::Perl
 Name:		perl-MIDI-Perl
 Version:	0.82
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
