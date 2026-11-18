@@ -7,14 +7,14 @@
 Summary:	MIDI::Perl perl module
 Summary(pl.UTF-8):	Moduł perla MIDI::Perl
 Name:		perl-MIDI-Perl
-Version:	0.82
-Release:	2
+Version:	0.84
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	a4f1c45483b460b4059664cde8636de1
-URL:		http://search.cpan.org/dist/MIDI-Perl/
+Source0:	https://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	b1d7f7b428627739e935b713e3cec5af
+URL:		https://metacpan.org/release/MIDI-Perl
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
